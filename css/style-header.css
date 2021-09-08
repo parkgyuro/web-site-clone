@@ -26,6 +26,7 @@ html{
 body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 a{
     list-style: none;
@@ -39,7 +40,38 @@ button{
     width: var(--global-width);
     margin: 0 auto;
 }
-
+/* load page */
+.load-page{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-bar-container{
+    animation: rotate 0.8s infinite linear;
+}
+.loading-bar{
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border-top-left-radius: 100%;
+    border-left: 1px solid var(--color-black);
+    border-top: 1px solid var(--color-black);
+    transform: translate(-5px, -5px);
+}
+body.active .load-page{
+    display: none;
+}
+@keyframes rotate{
+    0%{transform: rotate(0)}
+    100%{transform: rotate(360deg)}
+}
 /* header */
 .header-container{
     display: flex;

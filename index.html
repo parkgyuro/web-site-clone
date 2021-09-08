@@ -8,9 +8,16 @@
     <script src="https://kit.fontawesome.com/fb0eb4f320.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style-header.css">
     <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css.style-footer.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
+    <div class="load-page">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
     <header class="header-wrapper global-width">
         <div class="header-container">
             <div class="logo-img-container">
@@ -137,7 +144,7 @@
                        <div class="second-section-img-bg">
                            <img src="./img/second-section-img-01.jpg" alt="wearing-nike-cloth" class="first-section-img">
                        </div>
-                       <div class="second-section-img">
+                       <div class="second-section-img-bg">
                             <img src="./img/second-section-img-02.jpg" alt="wearing-nike-cloth" class="first-section-img">
                        </div>
                     </div>
@@ -161,7 +168,7 @@
                 <div class="third-section-img-wrapper">
                     <div class="third-section-img-container">
                        <div class="third-section-img-bg">
-                           <img src="./img/second-section-img-01.jpg" alt="wearing-nike-cloth" class="first-section-img">
+                           <img src="./img/third-section-img-01.jpg" alt="wearing-nike-cloth" class="first-section-img">
                        </div>
                     </div>
                 </div>
@@ -186,64 +193,76 @@
             </div>
             <div class="shoes-items">
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-01.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Air Max 97</h3>
-                        <p class="shoes-item-desc">Men's Shoes / Life Style</p>
-                        <p class="shoes-item-price">199,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-01.jpeg" alt="shoes-image">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Air Max 97</h3>
+                            <p class="shoes-item-desc">Men's Shoes / Life Style</p>
+                            <p class="shoes-item-price">199,000</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-02.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Air Force 1 '07</h3>
-                        <p class="shoes-item-desc">Men's Shoes / Life Style</p>
-                        <p class="shoes-item-price">129,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-02.jpeg" alt="shoes-image" class="translateY">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Air Force 1 '07</h3>
+                            <p class="shoes-item-desc">Men's Shoes / Life Style</p>
+                            <p class="shoes-item-price">129,000</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-03.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Air Zoom 38</h3>
-                        <p class="shoes-item-desc">Men's Shoes / Life Style</p>
-                        <p class="shoes-item-price">139,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-03.jpeg" alt="shoes-image">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Air Zoom 38</h3>
+                            <p class="shoes-item-desc">Men's Shoes / Life Style</p>
+                            <p class="shoes-item-price">139,000</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-04.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Waffle Trainer 2</h3>
-                        <p class="shoes-item-desc">Women's Shoes / Life Style</p>
-                        <p class="shoes-item-price">98,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-04.jpeg" alt="shoes-image">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Waffle Trainer 2</h3>
+                            <p class="shoes-item-desc">Women's Shoes / Life Style</p>
+                            <p class="shoes-item-price">98,000</p>
+                        </div>
+                    </a>  
                 </article>
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-05.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Air Max 90</h3>
-                        <p class="shoes-item-desc">Men's Shoes / Life Style</p>
-                        <p class="shoes-item-price">179,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-05.jpeg" alt="shoes-image">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Air Max 90</h3>
+                            <p class="shoes-item-desc">Men's Shoes / Life Style</p>
+                            <p class="shoes-item-price">179,000</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="shoes-item-container">
-                    <div class="shoes-item-img-container">
-                        <img src="./img/shoes-item-06.jpeg" alt="shoes-image">
-                    </div>
-                    <div class="shoes-item-desc-container">
-                        <h3 class="shoes-item-title">Nike Air Max 98</h3>
-                        <p class="shoes-item-desc">Men's Shoes / Life Style</p>
-                        <p class="shoes-item-price">219,000</p>
-                    </div>
+                    <a href="#">
+                        <div class="shoes-item-img-container">
+                            <img src="./img/shoes-item-06.jpeg" alt="shoes-image">
+                        </div>
+                        <div class="shoes-item-desc-container">
+                            <h3 class="shoes-item-title">Nike Air Max 98</h3>
+                            <p class="shoes-item-desc">Men's Shoes / Life Style</p>
+                            <p class="shoes-item-price">219,000</p>
+                        </div>
+                    </a>
                 </article>
             </div>
         </section>
@@ -255,71 +274,111 @@
             </div>
             <div class="cloth-item">
                 <article class="cloth-item-container">
-                    <div class="cloth-item-img-container">
-                        <img src="./img/cloth-item-01.jpg" alt="cloth-item">
-                    </div>
-                    <div class="cloth-item-desc-container">
-                        <p>Jacket</p>
-                    </div>
+                    <a href="#">
+                        <div class="cloth-item-img-container">
+                            <img src="./img/cloth-item-01.jpg" alt="cloth-item">
+                        </div>
+                        <div class="cloth-item-desc-container">
+                            <p>Jacket</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="cloth-item-container">
-                    <div class="cloth-item-img-container">
-                        <img src="./img/cloth-item-02.jpg" alt="cloth-item">
-                    </div>
-                    <div class="cloth-item-desc-container">
-                        <p>Pants</p>
-                    </div>
+                    <a href="#">
+                        <div class="cloth-item-img-container">
+                            <img src="./img/cloth-item-02.jpg" alt="cloth-item">
+                        </div>
+                        <div class="cloth-item-desc-container">
+                            <p>Pants</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="cloth-item-container">
-                    <div class="cloth-item-img-container">
-                        <img src="./img/cloth-item-03.jpg" alt="clote-item">
-                    </div>
-                    <div class="cloth-item-desc-container">
-                        <p>Hoodie</p>
-                    </div>
+                    <a href="#">
+                        <div class="cloth-item-img-container">
+                            <img src="./img/cloth-item-03.jpg" alt="clote-item">
+                        </div>
+                        <div class="cloth-item-desc-container">
+                            <p>Hoodie</p>
+                        </div>
+                    </a>
                 </article>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="more-service">
-            <dl>
-                <dt>고객센터</dt>
-                <dd>080-022-0182</dd>
-    
+        <div class="more-service global-width">
+            <ul class="user-service">
+                <li>
+                    <a href="#">Store information</a>
+                </li>
+                <li>
+                   <a href="#">Nike Journal</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Membership</a>
+                </li>
+            </ul>
+            <dl class="footer-service-center">
+                <dt>Service center</dt>
+                <dd>
+                    <a href="">080-022-0182</a>
+                </dd>
+            </dl>
+            <dl class="footer-about">
                 <dt>ABOUT NIKE</dt>
-                <dd>about nike</dd>
-    
+                <dd>
+                    <a href="">about nike</a>
+                </dd>
+            </dl>
+            <dl class="footer-social">
                 <dt>SOCIAL</dt>
-                <dd><i class="fab fa-twitter"></i></dd>
-                <dd><i class="fab fa-facebook-f"></i></dd>
-                <dd><i class="fab fa-youtube"></i></dd>
-                <dd><i class="fab fa-instagram"></i></dd>
+                <div class="social-container">
+                    <dd>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </dd>
+                </div>
             </dl>
         </div>
-        <hr>
         <div class="copyright-wrapper">
             <div class="copyrigth-container">
                 <div class="location">
-                    <i class="fas fa-map-marker"></i>
-                    <p>South Korea</p>
+                    <a href="#">
+                        <i class="fas fa-map-marker"></i>
+                        <p>South Korea</p>
+                    </a>
                 </div>
                 <div class="copyright">
                     &copy; 2021 Nike, Inc. All Right Reserved
                 </div>
             </div>
             <div class="terms-of-service-container">
-                <p class="terms-of-service">
-                    terms of service
-                </p>
-                <p class="privacy-policy">
-                    privacy policy
-                </p>
+                <a href="#">
+                    <p class="terms-of-service">
+                        terms of service
+                    </p>
+                </a>
+                <a href="#">
+                    <p class="privacy-policy">
+                        privacy policy
+                    </p>
+                </a>
             </div>
         </div>
-        <hr>
         <div class="page-information-wrapper">
-            <p class="page-information">this page is not real</p>
+            <p class="page-information">This page is not real</p>
         </div>
     </footer>
 </body>
