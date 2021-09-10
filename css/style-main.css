@@ -71,6 +71,8 @@
 .first-section-desc-title{
     font-size: var(--title-font-size);
     font-weight: bold;
+    color: var(--color-white);
+    -webkit-text-stroke: 1px var(--color-black);
 }
 .first-section-desc-para{
     font-size: var(--desc-font-size);
@@ -115,6 +117,8 @@
 .second-section-desc-title{
     font-size: var(--title-font-size);
     font-weight: bold;
+    color: var(--color-white);
+    -webkit-text-stroke: 1px var(--color-black);
 }
 .second-section-desc-para{
     font-size: var(--desc-font-size);
@@ -152,6 +156,8 @@
 .third-section-desc-title{
     font-size: var(--title-font-size);
     font-weight: bold;
+    color: var(--color-white);
+    -webkit-text-stroke: 1px var(--color-black);
 }
 .third-section-desc-para{
     font-size: var(--desc-font-size);
