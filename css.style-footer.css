@@ -137,3 +137,26 @@
     color: var(--color-white);
 }
 
+@media screen and (max-width : 500px) {
+    .more-service{
+        margin-bottom: 50px;
+    }
+    .user-service{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .user-service li a{
+        text-align: center;
+        white-space: nowrap;
+    }
+    .footer-service-center{
+        display: none;
+    }
+    .footer-about{
+        display: none;
+    }
+    .footer-social{
+        display: none;
+    }
+}

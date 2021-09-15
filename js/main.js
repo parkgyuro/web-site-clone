@@ -1,12 +1,15 @@
 const subMenuBtn = document.querySelectorAll('.nav-menu');
 const subMenuBtns = document.querySelector('.nav-container');
-const subMenuContainer = document.querySelector('.header-sub-menu-container')
+const subMenuContainer = document.querySelector('.header-sub-menu-container');
+const loadingPage = document.querySelector('.load-page');
 const modal = document.querySelector('.modal');
+const mobileModal = document.querySelector('.modal-mobile');
 const observeReady = document.querySelectorAll('.observe-ready');
 const firstSectionImgContainer = document.querySelector('.first-section-img-container');
 const shoesItemContainer = document.querySelector('.shoes-items');
+const mobileSubMenuBtn = document.querySelector('#mobile-sub-menu');
+const mobileSubMenu = document.querySelector('.header-sub-menu-mobile');
 
-const documentHeight = document.body.scrollHeight;
 const ACTIVE = 'active';
 
 let firstSectionSpeed = 1;
@@ -35,16 +38,12 @@ function setSubMenuIndex(){
 }
 
 function loadingPageRemove(){
-    document.body.classList.add(ACTIVE);
-}
-
-function setModal(){
-    modal.style.height = `${documentHeight}px`;
+    loadingPage.classList.add(ACTIVE);
 }
 
 function showSubMenu(targetIndex){
     subMenuContainer.innerHTML = subMenuData[targetIndex];
-    setModal();
+    document.body.classList.remove(ACTIVE);
     modal.classList.add(ACTIVE);
     subMenuContainer.classList.add(ACTIVE);
 
@@ -52,8 +51,25 @@ function showSubMenu(targetIndex){
         let target = e.target;
 
         if(target === modal){
+            document.body.classList.add(ACTIVE);
             modal.classList.remove(ACTIVE);
             subMenuContainer.classList.remove(ACTIVE);
+        }
+    })
+}
+
+function showMobileSubMenu(){
+    mobileSubMenu.classList.add(ACTIVE);
+    mobileModal.classList.add(ACTIVE);
+    document.body.classList.remove(ACTIVE);
+
+    document.body.addEventListener('click', (e) => {
+        let target = e.target;
+
+        if(target === mobileModal){
+            mobileModal.classList.remove(ACTIVE);
+            mobileSubMenu.classList.remove(ACTIVE);
+            document.body.classList.add(ACTIVE);
         }
     })
 }
@@ -102,5 +118,8 @@ subMenuBtns.addEventListener('mouseover', (e) => {
     showSubMenu(targetIndex);
 });
 
+mobileSubMenuBtn.addEventListener('click', () => {
+    showMobileSubMenu();
+})
 
 

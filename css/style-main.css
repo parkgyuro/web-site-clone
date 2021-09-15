@@ -11,8 +11,11 @@
     --section-title-font-size: 1.5rem;
     --first-section-img-container-margin: 20px 0;
     --first-section-img-bg-scale: 40vw;
+    --first-section-img-bg-min-scale: 300px;
     --title-font-size: 3rem;
     --desc-font-size: 1.3rem;
+    --first-section-img-max-height: 960px;
+    --second-section-img-max-height: 800px;
 }
 .item-introduce{
     margin-top: var(--item-introduce-margin-top);
@@ -47,6 +50,8 @@
 }
 .first-section-img-bg{
     width: var(--first-section-img-bg-scale);
+    min-width: var(--first-section-img-bg-min-scale);
+    min-height: var(--first-section-img-bg-min-scale);
     height: var(--first-section-img-bg-scale);
     display: inline-block;
     overflow: hidden;
@@ -73,6 +78,7 @@
     font-weight: bold;
     color: var(--color-white);
     -webkit-text-stroke: 1px var(--color-black);
+    text-align: center;
 }
 .first-section-desc-para{
     font-size: var(--desc-font-size);
@@ -97,6 +103,7 @@
 .second-section-img-bg{
     width: 50%;
     height: 40vw;
+    max-height: var(--second-section-img-max-height);
     overflow: hidden;
 }
 .second-section-img-bg img{
@@ -119,6 +126,7 @@
     font-weight: bold;
     color: var(--color-white);
     -webkit-text-stroke: 1px var(--color-black);
+    text-align: center;
 }
 .second-section-desc-para{
     font-size: var(--desc-font-size);
@@ -190,8 +198,10 @@
     gap: 10px;
 }
 .shoes-item-img-container{
-    width: 300px;
-    height: 300px;
+    width: var(--first-section-img-bg-scale);
+    height: var(--first-section-img-bg-scale);
+    min-width: var(--first-section-img-bg-min-scale);
+    min-height: var(--first-section-img-bg-min-scale);
     overflow: hidden;
     background-color: #f6f6f6;
 }
@@ -241,6 +251,7 @@
 .cloth-item-img-container{
     width: 100%;
     height: 35vw;
+    max-height: var(--second-section-img-max-height);
 }
 .cloth-item-img-container img{
     width: 100%;
@@ -254,4 +265,28 @@
     color: var(--color-white);
     font-size: var(--desc-font-size);
     font-weight: bold;
+}
+
+@media  screen and (max-width : 500px) {
+    .second-section-img-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .second-section-img-bg{
+        width: 100%;
+        height: 100vw;
+        overflow: hidden;
+    }
+    .second-section-img-bg:first-child img{
+        width: auto;
+        height: 120%;
+        transform: translateX(-20%)
+    }
+    .cloth-item{
+        flex-direction: column;
+    }
+    .cloth-item-img-container{
+        width: 100%;
+        height: 100vw;
+    }
 }
